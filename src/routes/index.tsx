@@ -103,8 +103,7 @@ function Index() {
 
   const run = useServerFn(generateWeek);
   const mutation = useMutation({
-    mutationFn: (vars: { topic: string; tone: Tone; platform: Platform }) =>
-      run({ data: vars }),
+    mutationFn: (vars: { topic: string; tone: Tone; platform: Platform }) => run({ data: vars }),
   });
 
   const posts = mutation.data?.posts ?? [];
@@ -121,8 +120,8 @@ function Index() {
           <span className="text-primary"> one topic</span>
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground md:text-base">
-          Captions, hooks and hashtags for seven days — written in the tone and format your
-          platform rewards.
+          Captions, hooks and hashtags for seven days — written in the tone and format your platform
+          rewards.
         </p>
       </header>
 

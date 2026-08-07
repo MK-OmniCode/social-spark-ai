@@ -23,7 +23,7 @@ export const PostSchema = z.object({
 });
 
 export const WeekSchema = z.object({
-  posts: z.array(PostSchema),
+  posts: z.array(PostSchema).min(1),
 });
 
 export type GeneratedPost = z.infer<typeof PostSchema>;
