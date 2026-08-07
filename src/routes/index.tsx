@@ -220,6 +220,10 @@ function Index() {
           </div>
         </section>
       )}
+
+      <footer className="mt-16 border-t border-border pt-6 text-center text-sm text-muted-foreground">
+        Built by <span className="font-medium text-foreground">Kashif</span>
+      </footer>
     </main>
   );
 }
